@@ -1,4 +1,4 @@
-FROM node:16
+FROM public.ecr.aws/amazoncorretto/amazoncorretto:25-jdk
 
 ENV HOME=/home/app
 
