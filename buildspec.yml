@@ -7,7 +7,7 @@ phases:
       - aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 695359722844.dkr.ecr.us-east-1.amazonaws.com
       - REPOSITORY_URI=695359722844.dkr.ecr.us-east-1.amazonaws.com/iitk-capstone-backend
       - IMAGE_TAG=build-$(echo $CODEBUILD_BUILD_ID | awk -F":" '{print $2}')
-      - CONTAINER_NAME="backend-container"
+      - CONTAINER_NAME=backend-container
   build:
     commands:
       - echo Build started on `date`
