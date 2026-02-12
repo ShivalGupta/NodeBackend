@@ -1,4 +1,4 @@
-FROM public.ecr.aws/amazoncorretto/amazoncorretto:25-jdk
+FROM public.ecr.aws/docker/library/node:latest
 ENV HOME=/home/app
 COPY package.json $HOME/node_docker/
 WORKDIR $HOME/node_docker
